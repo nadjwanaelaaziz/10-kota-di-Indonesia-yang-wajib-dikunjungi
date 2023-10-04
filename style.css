@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: monospace;, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0 ;
+    vertical-align: baseline;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 26px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff9900;
+}
+
+.ticker-container {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    color: #000;
+    height: 30px;
+    padding: 5px;
+}
+
+.ticker {
+    white-space: nowrap; 
+    animation: ticker-animation 20s linear infinite;
+}
+
+/* Gaya teks dalam ticker */
+.ticker-text {
+    padding-right: 100%; /* Membuat teks bergerak keluar dari layar */
+    animation: ticker-text-animation 15s linear infinite; /* Animasi teks yang bergerak */
+}
+
+/* Animasi teks yang bergerak ke kanan */
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Animasi teks dalam ticker */
+@keyframes ticker-text-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+
+}
+.kota-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.kota {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 50px;
+    width: 600px;
+    text-align: center;
+}
+
+.kota nav{
+    align-items: left;
+}
+
+.kota img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 200px;
+    align-items: center;
+}
+
+left-aligned {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container .blog-section .tittle p{
+    text-align: justify;
+    margin: 30px;
+}
+
+.kota-container .kota p{
+    text-align: left;
+}
+
+.kota-container .kota d1{
+    text-align: left;
+}
